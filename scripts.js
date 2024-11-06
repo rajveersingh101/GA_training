@@ -31,3 +31,30 @@ document.getElementById("set-dimension-btn")?.addEventListener("click", function
         alert("Please enter a custom dimension.");
     }
 });
+
+// JavaScript for handling search input
+
+document.getElementById("search-btn")?.addEventListener("click", function() {
+    const query = document.getElementById("search").value;
+    
+    if(query.trim() === "") {
+        alert("Please enter a search term.");
+    } else {
+        console.log("Search Query:", query);
+        alert(`You searched for: ${query}`); // Optional: to alert the user
+    }
+});
+
+// Alternatively, you can trigger the search on "Enter" key press:
+document.getElementById("search")?.addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+        const query = document.getElementById("search").value;
+        if (query.trim() === "") {
+            alert("Please enter a search term.");
+        } else {
+            console.log("Search Query:", query);
+            alert(`You searched for: ${query}`); // Optional: to alert the user
+        }
+    }
+});
+

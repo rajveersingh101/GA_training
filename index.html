@@ -2,38 +2,6 @@
 <html lang="en">
 <head>
 <script>
-// Define dataLayer and the gtag function.
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
- 
-// Set default consent for specific regions according to your requirements
-// For regions California, Colorado, Connecticut, Texas, Oregon, Montana, Iowa, Delaware, Nebraska, New Hampshire, New Jersey, Tennessee, Minnesota, Maryland, Indiana (OPT-OUT Consent Model)
-
-gtag('consent', 'default', {
-  'ad_storage': 'granted',
-  'ad_user_data': 'granted',
-  'personalization_storage': 'granted',
-  'ad_personalization': 'granted',
-  'analytics_storage': 'granted',
-  'functionality_storage': 'granted',
-  'security_storage': 'granted',
- 
- 'regions':['US-CA', 'US-CO', 'US-CT', 'US-TX', 'US-OR', 'US-MT', 'US-IA', 'US-DE', 'US-NE', 'US-NH', 'US-NJ', 'US-TN', 'US-MN', 'US-MD', 'US-IN']
-});
-
-// Set default consent for all other regions according to your requirements
-// For Global (OPT-IN Consent Model)
-
-gtag('consent', 'default', {
-  'ad_storage': 'denied',
-  'ad_user_data': 'denied',
-  'personalization_storage': 'denied',
-  'ad_personalization': 'denied',
-  'analytics_storage': 'denied'
-  'functionality_storage': 'denied',
-  'security_storage': 'granted',
-});
-</script>
  <!-- OneTrust Cookies Consent Notice start for parcelnewstg.wpengine.com -->
  
     <script src=https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js  type="text/javascript" charset="UTF-8" data-domain-script="019952d0-d74a-76d0-8b12-5c0e51d15c82" ></script>
